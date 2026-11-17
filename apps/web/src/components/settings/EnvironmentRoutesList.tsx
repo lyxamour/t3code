@@ -113,6 +113,7 @@ export function EnvironmentRoutesList({
                 route={route}
                 position={index + 1}
                 inUse={connectionRouteId(route.target) === activeRouteId}
+                refused={environment.refusedRouteIds.includes(connectionRouteId(route.target))}
                 removable={routes.length > 1 && !isLearned(route)}
                 onRemove={() => void confirmRemove(route)}
               />
@@ -134,12 +135,14 @@ function SortableRouteRow({
   route,
   position,
   inUse,
+  refused,
   removable,
   onRemove,
 }: {
   readonly route: ConnectionRoute;
   readonly position: number;
   readonly inUse: boolean;
+  readonly refused: boolean;
   readonly removable: boolean;
   readonly onRemove: () => void;
 }) {
@@ -174,12 +177,20 @@ function SortableRouteRow({
               {t("routes.inUse")}
             </span>
           ) : null}
+          {refused ? (
+            <span className="rounded-sm bg-destructive/8 px-1 text-2xs font-normal text-destructive-foreground">
+              {t("routes.signInRefused")}
+            </span>
+          ) : null}
         </p>
         {address !== null ? (
           <p className="truncate text-2xs text-muted-foreground">
             {address}
             {isLearned(route) ? t("routes.foundAutomatically") : ""}
           </p>
+        ) : null}
+        {refused && address !== null ? (
+          <p className="text-2xs text-muted-foreground">{t("routes.signInRefusedHint")}</p>
         ) : null}
       </div>
       <button

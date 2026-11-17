@@ -40,6 +40,10 @@ import enCloud from "../locales/en/cloud.json";
 import zhHansCloud from "../locales/zh-Hans/cloud.json";
 import enClerk from "../locales/en/clerk.json";
 import zhHansClerk from "../locales/zh-Hans/clerk.json";
+import enIssue from "../locales/en/issue.json";
+import zhHansIssue from "../locales/zh-Hans/issue.json";
+import enSavedViews from "../locales/en/savedViews.json";
+import zhHansSavedViews from "../locales/zh-Hans/savedViews.json";
 import { type UiLocale } from "@t3tools/contracts/settings";
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -72,6 +76,8 @@ declare module "i18next" {
       ui: typeof enUi;
       cloud: typeof enCloud;
       clerk: typeof enClerk;
+      issue: typeof enIssue;
+      savedViews: typeof enSavedViews;
     };
   }
 }
@@ -116,6 +122,8 @@ if (!i18next.isInitialized) {
       "ui",
       "cloud",
       "clerk",
+      "issue",
+      "savedViews",
     ],
     resources: {
       en: {
@@ -140,6 +148,8 @@ if (!i18next.isInitialized) {
         ui: enUi,
         cloud: enCloud,
         clerk: enClerk,
+        issue: enIssue,
+        savedViews: enSavedViews,
       },
       "zh-Hans": {
         settings: zhHansSettings,
@@ -163,6 +173,8 @@ if (!i18next.isInitialized) {
         ui: zhHansUi,
         cloud: zhHansCloud,
         clerk: zhHansClerk,
+        issue: zhHansIssue,
+        savedViews: zhHansSavedViews,
       },
     },
     // Locale files are bundled per language, so nothing is fetched at runtime.

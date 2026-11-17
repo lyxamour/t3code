@@ -71,6 +71,8 @@
     "updateWithRebase": "Update with rebase"
   },
   "breakdown": {
+    "code": "Code",
+    "docs": "Docs",
     "generated": "Generated",
     "loading": "Loading breakdown",
     "mocks": "Mocks",
@@ -339,7 +341,7 @@
     "couldNotRewrite": "Could not rewrite this guide. {{hint}}",
     "couldNotWrite": "Could not write a review guide",
     "diffLoadFailed": "The diff could not be loaded, so excerpts are missing: {{error}}",
-    "failureHint": "Check the review guide model in Settings → Source control.",
+    "failureHint": "Check the review guide model in Settings → Source control & issues.",
     "fileNotInDiff": "This file is not in the loaded diff.",
     "filesInStop": "Files in this stop",
     "finishReview": "Finish review",

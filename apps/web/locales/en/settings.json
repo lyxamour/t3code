@@ -1515,6 +1515,27 @@
     "increase": "Increase {{label}}",
     "inSeconds": "{{label}} in seconds"
   },
+  "issueTrackers": {
+    "bindingAria": "{{name}} {{scopeNoun}} for {{project}}",
+    "createOne": "Create one",
+    "credentialRejected": "Credential rejected",
+    "disconnectAria": "Disconnect {{name}}",
+    "loadFailed": "Could not load issue trackers",
+    "notBound": "Not bound",
+    "projects": "Projects",
+    "projectsDescription": "Pick the {{name}} {{scopeNoun}} whose issues each project lists beside its repository's own.",
+    "requestFailed": "The request failed.",
+    "retry": "Retry",
+    "storedOnServer": "Stored on the server.",
+    "summaryConnected": "Connected as {{account}} · {{projects}}",
+    "summaryCredentialRejected": "The saved credential was rejected.",
+    "summaryNoProjects": "no projects linked yet. Pick a {{scopeNoun}} for a project to list its issues.",
+    "summaryNotConnected": "Not connected. Add a {{credential}} to list its issues.",
+    "summaryProjectsLinked_one": "{{count}} project linked",
+    "summaryProjectsLinked_other": "{{count}} projects linked",
+    "title": "Issue trackers",
+    "toggleDetailsAria": "Toggle {{name}} details"
+  },
   "keybindingCommands": {
     "1": "Thread: Jump: 1",
     "2": "Thread: Jump: 2",
@@ -2430,7 +2451,9 @@
     "removeRoute": "Remove route",
     "removeRouteAria": "Remove {{label}} route",
     "reorder": "Reorder routes",
-    "reorderAria": "Reorder {{label}}, position {{position}}"
+    "reorderAria": "Reorder {{label}}, position {{position}}",
+    "signInRefused": "Sign-in refused",
+    "signInRefusedHint": "The host refused this device's sign-in. Pair this address again with Add route."
   },
   "row": {
     "builtInDefault": "Built-in default",

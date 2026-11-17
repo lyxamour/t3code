@@ -97,16 +97,19 @@ export function pullRequestHostLabel(
 export function PullRequestSearchInput({
   value,
   busy,
+  label,
+  placeholder,
   onChange,
   onSubmit,
 }: {
   value: string;
   busy?: boolean;
+  label: string;
+  placeholder: string;
   onChange: (value: string) => void;
   onSubmit: (value: string) => void;
 }) {
   const [draft, setDraft] = useState<string | null>(null);
-  const { t } = useTranslation("pullRequest");
   return (
     <InputGroup className="min-w-0 flex-1 **:[input]:h-9 sm:**:[input]:h-8">
       <InputGroupAddon>
@@ -129,8 +132,8 @@ export function PullRequestSearchInput({
             onSubmit(event.currentTarget.value);
           }
         }}
-        placeholder={t("list.searchPlaceholder")}
-        aria-label={t("list.search")}
+        placeholder={placeholder}
+        aria-label={label}
       />
     </InputGroup>
   );
@@ -208,7 +211,7 @@ function PullRequestFilterRadioGroup<Value extends string>({
         return (
           <Tooltip key={option.value}>
             <TooltipTrigger render={item} />
-            <TooltipPopup side="top">{option.unavailable}</TooltipPopup>
+            <TooltipPopup side="top">{t(option.unavailable as never)}</TooltipPopup>
           </Tooltip>
         );
       })}
@@ -216,7 +219,7 @@ function PullRequestFilterRadioGroup<Value extends string>({
   );
 }
 
-function PullRequestFilterRadioSubmenu<Value extends string>({
+export function PullRequestFilterRadioSubmenu<Value extends string>({
   label,
   value,
   options,

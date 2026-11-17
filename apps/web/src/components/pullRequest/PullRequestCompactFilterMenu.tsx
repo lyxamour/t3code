@@ -89,7 +89,9 @@ export function PullRequestCompactFilterMenu<Value extends string>({
             ) : (
               <Tooltip key={option.value}>
                 <TooltipTrigger render={item} />
-                <TooltipPopup side="right">{option.unavailable}</TooltipPopup>
+                <TooltipPopup side="right">
+                  {presentationLabel(option.unavailable ?? "")}
+                </TooltipPopup>
               </Tooltip>
             );
           })}

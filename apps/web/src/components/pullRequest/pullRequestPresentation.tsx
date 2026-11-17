@@ -33,7 +33,8 @@ import type { PullRequestReviewOutcome } from "./pullRequestDetail.logic";
 import { pullRequestLabelColor } from "./pullRequestList.logic";
 
 export function presentationLabel(label: string): string {
-  const key = label.startsWith("pullRequest:") ? label : `pullRequest:${label}`;
+  // A "ns:key" label names its own namespace; a bare one belongs to the pull-request page.
+  const key = label.includes(":") ? label : `pullRequest:${label}`;
   return i18n.exists(key) ? translateDynamic(key) : label;
 }
 import {

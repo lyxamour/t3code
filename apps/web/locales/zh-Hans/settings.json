@@ -1503,6 +1503,26 @@
     "increase": "增大{{label}}",
     "inSeconds": "{{label}}（秒）"
   },
+  "issueTrackers": {
+    "bindingAria": "{{project}} 的 {{name}} {{scopeNoun}}",
+    "createOne": "去创建",
+    "credentialRejected": "凭据被拒绝",
+    "disconnectAria": "断开 {{name}}",
+    "loadFailed": "无法加载议题追踪器",
+    "notBound": "未绑定",
+    "projects": "项目",
+    "projectsDescription": "为每个项目选择要读取议题的 {{name}} {{scopeNoun}}，其议题会列在仓库自身议题旁边。",
+    "requestFailed": "请求失败。",
+    "retry": "重试",
+    "storedOnServer": "保存在服务器上。",
+    "summaryConnected": "以 {{account}} 连接 · {{projects}}",
+    "summaryCredentialRejected": "已保存的凭据被拒绝。",
+    "summaryNoProjects": "还没有关联项目。为某个项目选择一个{{scopeNoun}}即可列出其议题。",
+    "summaryNotConnected": "未连接。添加一个{{credential}}即可列出其议题。",
+    "summaryProjectsLinked": "已关联 {{count}} 个项目",
+    "title": "议题追踪器",
+    "toggleDetailsAria": "展开或收起 {{name}} 详情"
+  },
   "keybindingCommands": {
     "1": "跳转到线程 1",
     "2": "跳转到线程 2",
@@ -2411,7 +2431,9 @@
     "removeRoute": "移除路由",
     "removeRouteAria": "移除 {{label}} 路由",
     "reorder": "重排路由",
-    "reorderAria": "重排 {{label}}，位置 {{position}}"
+    "reorderAria": "重排 {{label}}，位置 {{position}}",
+    "signInRefused": "登录被拒绝",
+    "signInRefusedHint": "主机拒绝了此设备的登录。请用「添加路由」重新配对这个地址。"
   },
   "row": {
     "builtInDefault": "内置默认值",

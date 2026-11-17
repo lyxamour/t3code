@@ -1,0 +1,37 @@
+{
+  "dialog": {
+    "cancel": "Cancel",
+    "description": "Save your search, filters, and sort order on this device.",
+    "nameLabel": "View name",
+    "renameTitle": "Rename {{shortNoun}} view",
+    "save": "Save",
+    "saveTitle": "Save {{shortNoun}} view"
+  },
+  "errors": {
+    "removedDescription": "Your name has been kept. Save it as a new view or cancel.",
+    "removedTitle": "This saved view was removed",
+    "saveDescription": "Local storage is unavailable or full. Try again after freeing space or allowing storage.",
+    "saveTitle": "Could not save {{shortNoun}} views"
+  },
+  "kinds": {
+    "issue": {
+      "name": "Issues Assigned to Me",
+      "noun": "issue",
+      "shortNoun": "issue"
+    },
+    "pullRequest": {
+      "name": "PRs Requesting My Review",
+      "noun": "pull request",
+      "shortNoun": "PR"
+    }
+  },
+  "menu": {
+    "delete": "Delete view",
+    "modified": "Modified view",
+    "rename": "Rename view…",
+    "saveCurrent": "Save current view…",
+    "update": "Update saved view",
+    "views": "Views",
+    "viewsAria": "Saved {{noun}} views"
+  }
+}
